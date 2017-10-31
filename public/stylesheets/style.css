@@ -1,8 +1,22 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+    color: #00b7ff;
+}
+
+
+.pic {
+    width: 150px;
+}
+
+.picAbout {
+    width: 100%;
+    height: 300px;
+}
+
+.container {
+    border-bottom-style: dotted;
 }

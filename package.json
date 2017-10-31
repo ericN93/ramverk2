@@ -13,5 +13,19 @@
     "morgan": "~1.9.0",
     "pug": "2.0.0-beta11",
     "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "clean-css": "^4.1.9",
+    "clean-css-cli": "^4.1.10",
+    "csslint": "^1.0.5",
+    "eslint": "^4.9.0",
+    "eslint-plugin-react": "^7.4.0",
+    "html-minifier": "^3.5.5",
+    "htmlhint": "^0.9.13",
+    "js-yaml": "^3.10.0",
+    "jscs": "^3.0.7",
+    "jsonlint": "^1.6.2",
+    "stylelint": "^8.2.0",
+    "uglify-js": "^3.1.4"
   }
 }
