@@ -2,16 +2,27 @@ language: node_js
 
 node_js:
     - "node"
+    - "9"
     - "8"
-    - "7"
+    - "6"
 
-sudo: false
+sudo: required
+
+services:
+  - docker
 
 git:
     submodules: false
 
 before_script:
-    - make install
+    - npm install
 
 script:
-    - make test
+    - npm test
+
+after_success:
+    - npm run report-coverage
+    - npm run test-scrutinizer
+    - npm run docker-latest
+    - npm run docker-8
+    - npm run docker-6

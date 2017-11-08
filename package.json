@@ -6,6 +6,9 @@
     "start": "node ./bin/www",
     "test": "nyc --reporter=html --reporter=text mocha \"test/**/*.js\" ",
     "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov --token=314faaae-60a7-4f9a-baa4-66ceccb72d9b",
+    "docker-latest": "docker-compose run node_latest npm test",
+    "docker-8": "docker-compose run node_8 npm test",
+    "docker-6": "docker-compose run node_6 npm test",
     "test-scrutinizer": "nyc --all --reporter=clover mocha \"test/**/*.js\""
   },
   "dependencies": {
