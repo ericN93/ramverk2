@@ -3,15 +3,15 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-    res.render('index', { title: 'Me-sida' });
+    res.render('index', { title: 'Home' });
 });
 
 router.get('/about', function(req, res) {
-    res.render('about', {title: 'Om'});
+    res.render('about', {title: 'Home'});
 });
 
 router.get('/report', function(req, res) {
-    res.render('report', {title: 'Redovisning'});
+    res.render('report', {title: 'Reports'});
 });
 
 module.exports = router;

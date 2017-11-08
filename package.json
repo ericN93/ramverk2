@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "nyc --reporter=html --reporter=text mocha \"test/**/*.js\" ",
+    "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov --token=314faaae-60a7-4f9a-baa4-66ceccb72d9b",
+    "test-scrutinizer": "nyc --all --reporter=clover mocha \"test/**/*.js\""
   },
   "dependencies": {
     "body-parser": "~1.18.2",
@@ -17,15 +20,21 @@
   "devDependencies": {
     "clean-css": "^4.1.9",
     "clean-css-cli": "^4.1.10",
+    "codecov": "^3.0.0",
+    "coveralls": "^3.0.0",
     "csslint": "^1.0.5",
     "eslint": "^4.9.0",
     "eslint-plugin-react": "^7.4.0",
     "html-minifier": "^3.5.5",
     "htmlhint": "^0.9.13",
+    "istanbul": "^0.4.5",
     "js-yaml": "^3.10.0",
     "jscs": "^3.0.7",
     "jsonlint": "^1.6.2",
+    "mocha": "^4.0.1",
+    "nyc": "^11.2.1",
     "stylelint": "^8.2.0",
+    "supertest": "^3.0.0",
     "uglify-js": "^3.1.4"
   }
 }
