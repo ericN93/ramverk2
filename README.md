@@ -3,3 +3,4 @@
 [![Build Status](https://travis-ci.org/ericN93/ramverk2.svg?branch=master)](https://travis-ci.org/ericN93/ramverk2)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ericN93/ramverk2/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ericN93/ramverk2/?branch=master)
 [![codecov](https://codecov.io/gh/ericN93/ramverk2/branch/master/graph/badge.svg)](https://codecov.io/gh/ericN93/ramverk2)
+[![Maintainability](https://api.codeclimate.com/v1/badges/8f322786426933d03243/maintainability)](https://codeclimate.com/github/ericN93/ramverk2/maintainability)
