@@ -1,0 +1,26 @@
+extend layout
+
+block content
+    h1 Chat with WebSocket
+
+    form(id="form1")
+
+        label Connect:
+        input(id="connect" type="button" value="connect")
+
+        br
+        br
+
+        label NickName:
+        input(id="nickName" type="text")
+        br
+
+        label Send message:
+        input(id="message" type="text")
+        input(id="send_message" type="button" value="Send message")
+
+        br
+        br
+
+        label Log:
+        div(id="output" class="output")

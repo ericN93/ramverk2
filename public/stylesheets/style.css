@@ -20,3 +20,12 @@ a {
 .container {
     border-bottom-style: dotted;
 }
+
+.output {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    overflow: scroll;
+    font-size: smaller;
+}

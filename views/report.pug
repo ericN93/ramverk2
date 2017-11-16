@@ -40,9 +40,30 @@ block content
 
     h3 Kmom03:
     b Berätta vilka tekniker/verktyg du valde för enhetstester och kodtäckning och varför?
+    p Det jag körde med var scrutinizer samt Travis. Jag valde att använda dessa då jag har använt dem lite tidagre, och tycker att dem funkar smidigt. Använde också codecov och det var nog mer av en slump att jag använde det, tyckte väl att det såg helt ok ut samt ville ge det en chans.
+
     b Berätta om cin CI-kedja och reflektera över de valen du gjorde?
+    p Vissa av verktygen valde jag då jag har använt dem innan, dem andra var mer av en slump samt ville testa det. Tyckte det var lite svårt att hitta de fel som uppstod men tyckte att jag fick ett litet grep om det mot slutet. Hade lite problem att få ihop några av dem nya verktygen jag använde men fick ihop det tillslut.
+
     b Hur väl lyckades du utvärdera TDD-konceptet och vilka är dina reflektioner?
+    p Jag har gått en testnings kurs där vi använde oss av TDD i en uppgift. Tycker inte att det är så frästande att jobba på det viset. Jag har inte kommit igång så mycket med att jobba med TDD då jag mestadels bara satte ihop det så jag visste hur det funkade osv. Kommer nog att använda det mer när jag väl har kommit igång med min back-end mer. Vet inte om jag kommer testa front-end så mycket då ja ginte ser direkt poängen med det.
+
     b Berätta om tankarna kring din klient/server applikation och nämn de tekniker du använder.
+    p Jag använder mig utav den senaste versionen av angular. Min back-end består av expresssom sedan kommer kommunicera med min databas(vet inte riktigt vad för databas jag ska köra ännu). Jag kommer sedan att fixa realtid i senare kmom har inte riktigt bestämt mig annu för hur jag ska göra angående den delen. Angular kommer skötta min front-end som kommunicerar med API:et för att hämta samt ta hand om data.
+    p Anledningen varför jag har valt angular är att jag har jobbat lite med det innan och tycker det är roligt att jobba i. Borde kanske ha tagit ett annat ramverk för att lära mig mer om andra ramverk, men så blev det inte.
+
+    b Övrigt:
+    p Tyckte det varit ett lagom utmanande kmom. Tycker generellt att testning och den delen är lite smått tråkigt, men viktigt är det så det är bara att lära sig det. Längtar mer till att vi börjar koppla till databas och den biten.
+    p Får fortfarande lite validerings fel i test/routes/index.js och det är följande:
+    p 9:1  error  'describe' is not defined    no-undef
+    p 12:5  error  'beforeEach' is not defined  no-undef
+    p 16:5  error  'afterEach' is not defined   no-undef
+    p 19:5  error  'it' is not defined          no-undef
+    p 24:5  error  'it' is not defined          no-undef
+    p 29:5  error  'it' is not defined          no-undef
+    p 34:5  error  'it' is not defined          no-undef
+    p 39:5  error  'it' is not defined          no-undef
+    p Har testat att fixat dem men vet inte riktigt hur jag ska det.
 
 
     h3 Kmom04:
