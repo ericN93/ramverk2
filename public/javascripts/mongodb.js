@@ -1,5 +1,6 @@
 let editId = null;
 
+
 function savePerson() {
 	let inputFields = {
 		name: document.getElementById('name').value,
