@@ -22,4 +22,5 @@ router.get('/chat', function(req, res) {
     res.render('chat', { title: 'Chat'})
 });
 
+
 module.exports = router;

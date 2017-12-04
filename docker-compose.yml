@@ -1,25 +1,51 @@
-version: "2"
+version: "3"
 services:
+
   node_latest:
-    image: "node:9.0.0"
-    working_dir: /app
-    volumes:
-      - ./:/app/
-    ports:
-      - "3000:3000"
+      image: "node:9.0.0"
+      working_dir: /app
+      volumes:
+          - ./:/app/
+      ports:
+          - "3002:3000"
 
   node_8:
-    image: "node:8.9.0"
-    working_dir: /app
-    volumes:
-      - ./:/app/
-    ports:
-      - "3001:3000"
+      image: "node:8.9.0"
+      working_dir: /app
+      volumes:
+          - ./:/app/
+      ports:
+          - "3003:3000"
 
   node_6:
-    image: "node:6.11.5"
-    working_dir: /app
-    volumes:
-      - ./:/app/
-    ports:
-      - "3002:3000"
+      image: "node:6.11.5"
+      working_dir: /app
+      volumes:
+         - ./:/app/
+      ports:
+         - "3004:3000"
+  express:
+      build:
+          context: .
+          dockerfile: Dockerfile
+      environment:
+          - DBWEBB_DSN=mongodb://mongodb:27017/mumin
+      working_dir: /app
+      volumes:
+          - ./:/app/
+          - /app/node_modules/
+      ports:
+          - 3000:3000
+      links:
+          - mongodb
+      command: "npm start"
+
+  mongodb:
+      image: mongo
+      environment:
+          - MONGO_DATA_DIR=/data/db
+      volumes:
+          - ./data/db:/data/db
+      ports:
+          - 27017:27017
+      command: mongod

@@ -1,0 +1,29 @@
+extends layout
+
+block content
+	h1 Mongodb
+
+
+
+	input(id='name' type='text' placeholder='Name')
+	input(id='phone' type='text' placeholder='Phone Number')
+	input(id='city' type='text' placeholder='City')
+	input(id='age' type='text' placeholder='Age')
+	div(class='btn save-effect waves-light', id='add', onclick='savePerson()') save
+
+
+	div
+		each value, index in mongodb
+			div(class='mongo')
+				div(class='center')
+					h6= 'Name: ' + value.name
+				div(class='center')
+					h6= 'Phone: ' +  value.phone
+				div(class='center')
+					h6= 'City: ' + value.city
+				div(class='center')
+					h6= 'Age: ' + value.age
+				div(class='center')
+					div(class='btn save-effect waves-light ' + value._id, id='delete', onclick='removePerson(event.path)') delete
+				div(class='center')
+					div(class='btn save-effect waves-light ' + value._id, id='edit', onclick='editPerson(event.path)') edit
