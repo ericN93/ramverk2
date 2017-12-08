@@ -37,7 +37,7 @@ npm run docker_9
 ## Docker
 - Start with Express and MongoDB
 ```
-docker-compose run
+docker-compose start
 ```
 - Run container then execute
 ```
