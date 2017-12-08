@@ -1,7 +1,7 @@
 version: "3"
 services:
 
-  node_latest:
+  node_9:
       image: "node:9.0.0"
       working_dir: /app
       volumes:

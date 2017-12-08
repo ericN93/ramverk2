@@ -4,3 +4,50 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ericN93/ramverk2/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ericN93/ramverk2/?branch=master)
 [![codecov](https://codecov.io/gh/ericN93/ramverk2/branch/master/graph/badge.svg)](https://codecov.io/gh/ericN93/ramverk2)
 [![Maintainability](https://api.codeclimate.com/v1/badges/8f322786426933d03243/maintainability)](https://codeclimate.com/github/ericN93/ramverk2/maintainability)
+
+#### me/redovisa ramverk2
+
+## Techolongies
+
+- Pug
+- MongoDB
+- Express
+- Websocket
+- Docker
+
+## Installation
+```
+npm install
+```
+
+## Testing
+```
+npm test
+```
+```
+npm run docker-6
+```
+```
+npm run docker-8
+```
+```
+npm run docker_9
+```
+
+## Docker
+- Start with Express and MongoDB
+```
+docker-compose run
+```
+- Run container then execute
+```
+npm run docker
+```
+
+## Start Local development
+```
+npm start
+```
+
+## Change Port and DSN
+- Change port with: DBWEBB_PORT Change DSN with: DBWEBB_DSN
