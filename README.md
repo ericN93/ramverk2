@@ -25,19 +25,26 @@ npm install
 npm test
 ```
 ```
+npm run eslint
+```
+```
 npm run docker-6
 ```
 ```
 npm run docker-8
 ```
 ```
-npm run docker_9
+npm run docker-9
 ```
 
 ## Docker
 - Start with Express and MongoDB
 ```
 docker-compose start
+```
+- End 
+```
+docker-compose stop
 ```
 - Run container then execute
 ```
