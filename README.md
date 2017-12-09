@@ -46,10 +46,6 @@ docker-compose start
 ```
 docker-compose stop
 ```
-- Run container then execute
-```
-npm run docker
-```
 
 ## Start Local development
 ```
