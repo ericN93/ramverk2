@@ -9,7 +9,7 @@
     "eslint": "eslint --fix test/**/*.js",
     "docker-9": "docker-compose run node_9 npm test",
     "docker-8": "docker-compose run node_8 npm test",
-    "docker-6": "docker-compose run node_6 npm test"
+    "docker-6": "docker-compose run node_7 npm test"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
