@@ -25,13 +25,16 @@ npm install
 npm test
 ```
 ```
+npm run eslint
+```
+```
 npm run docker-6
 ```
 ```
 npm run docker-8
 ```
 ```
-npm run docker_9
+npm run docker-9
 ```
 
 ## Docker
@@ -39,9 +42,9 @@ npm run docker_9
 ```
 docker-compose start
 ```
-- Run container then execute
+- End 
 ```
-npm run docker
+docker-compose stop
 ```
 
 ## Start Local development
